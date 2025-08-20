@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Music Notation Translator</h1>
+    <p>Enter notes in staff notation (e.g., "C4 D4 E4 F4 G4 A4 B4 C5") and see them in Jianpu.</p>
+
+    <textarea id="notes-input" rows="10" cols="50" placeholder="Enter notes here..."></textarea>
+    <br>
+    <button id="translate-button">Translate</button>
+
+    <h2>Jianpu Output:</h2>
+    <div id="output-container">
+        <!-- The translated output will appear here -->
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
